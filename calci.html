@@ -5,21 +5,8 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-se=1.0">
-  <title>culator</title>
-  <script>
-    function display(a) {
-      const k = document.getElementById('txt');
-      k.value += a;
-    }
-
-    function solve() {
-      var n = document.getElementById('txt').value = eval(txt.value);
-    }
-    function clr() {
-      document.getElementById('txt').value = " ";
-
-    }
-  </script>
+  <title>Calculator</title>
+  <script src="calci.js" defer></script>
 
   <style>
     button {
@@ -43,7 +30,7 @@
   <!-- <script src="calci.js">import { myFunction, add } from "./ci"</script> -->
 
   <form>
-    <input id="txt" type="text" style="height: 50px; width:190px ;" id="txt" name="txt"><br><br>
+    <input id="txt" type="text" style="height: 50px; width:190px ;" name="txt"><br><br>
   </form>
   <button id="7" name="7" onclick="display('7')"> 7 </button>
   <button id="8" name="8" onclick="display('8')" type="button"> 8 </button>
@@ -66,7 +53,9 @@
   <br>
   <button id="0" name="0" onclick="display('0')" type="button"> 0 </button>
   <button id="=" name="e" onclick="solve()" type="button"> = </button>
-  <button id="cl" name="clear" onclick="clr()" type="button" style="padding:15px 26px"> clear </button><br>
+  <button id="/" name="/" onclick="display('/')" type="button"> / </button>
+
+  <button id="cl" name="clear" onclick="clr()" type="button" style="padding:15px 15px"> clear </button><br>
   <br>
 </body>
 
