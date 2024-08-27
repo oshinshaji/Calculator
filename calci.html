@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-se=1.0">
+  <title>culator</title>
+  <script>
+    function display(a) {
+      const k = document.getElementById('txt');
+      k.value += a;
+    }
+
+    function solve() {
+      var n = document.getElementById('txt').value = eval(txt.value);
+    }
+    function clr() {
+      document.getElementById('txt').value = " ";
+
+    }
+  </script>
+
+  <style>
+    button {
+      padding: 15px 15px;
+      border: 1px solid black;
+      border-collapse: collapse;
+    }
+
+
+    body {
+      border: 2px solid black;
+      display: inline-block;
+      height: 320px;
+      width: 200px;
+      padding: 6px 4px;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- <script src="calci.js">import { myFunction, add } from "./ci"</script> -->
+
+  <form>
+    <input id="txt" type="text" style="height: 50px; width:190px ;" id="txt" name="txt"><br><br>
+  </form>
+  <button id="7" name="7" onclick="display('7')"> 7 </button>
+  <button id="8" name="8" onclick="display('8')" type="button"> 8 </button>
+  <button id="9" name="9" onclick="display('9')" type="button"> 9 </button>
+  <button id="+" name="+" onclick="display('+')" type="button"> + </button>
+
+  <br>
+  <br>
+  <button id="4" name="7" onclick="display('4')" type="button"> 4 </button>
+  <button id="5" name="8" onclick="display('5')" type="button"> 5 </button>
+  <button id="6" name="9" onclick="display('6')" type="button"> 6 </button>
+  <button id="-" name="-" onclick="display('-')" type="button" style="padding:15px 17px"> - </button>
+  <br>
+  <br>
+  <button id="1" name="1" onclick="display('1')" type="button"> 1 </button>
+  <button id="2" name="2" onclick="display('2')" type="button"> 2 </button>
+  <button id="3" name="3" onclick="display('3')" type="button"> 3 </button>
+  <button id="*" name="*" onclick="display('*')" type="button"> * </button>
+  <br>
+  <br>
+  <button id="0" name="0" onclick="display('0')" type="button"> 0 </button>
+  <button id="=" name="e" onclick="solve()" type="button"> = </button>
+  <button id="cl" name="clear" onclick="clr()" type="button" style="padding:15px 26px"> clear </button><br>
+  <br>
+</body>
+
+</html>
